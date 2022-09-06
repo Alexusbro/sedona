@@ -47,7 +47,7 @@
     </header>
     <main>
         <section class="catalog-filter">
-            <h1 class="katalog-header">Гостиницы Седоны</h1>
+            <h1 class="catalog-header">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
                 <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="Index.html">
                         <span class="visually-hidden">Главная</span>
@@ -122,13 +122,13 @@
                         <span class="visually-hidden">Изменить максимальную цену</span>
                     </button>
                 </fieldset>
-                <button type="submit" class="filter-button">применить</button>
+                <button type="submit" class="button filter-button">применить</button>
                 <button type="reset" class="filter-button-reset">сбросить</button>
             </form>
         </section>
         <section class="catalog-hotels">
             <h2 class="visually-hidden">Список гостиниц с сортировкой</h2>
-            <p class="section-title">Найдено гостиниц: 38</p>
+            <p class="catalog-title">Найдено гостиниц: 38</p>
             <form class="catalog-sorting">
                 <label class="visually-hidden" for="sorting">Сортировка отелей</label>
                 <select name="sorting" id="sorting" class="select-sorting">
@@ -155,8 +155,8 @@
                 </a>
                 <p class="hotel-card-text">Гостиница</p>
                 <p class="hotel-card-text">От 4000 ₽</p>
-                <a href="" class="button-detailed">Подробнее</a>
-                <button class="button-favourites">В избранное</button>
+                <a href="" class="button button-detailed">Подробнее</a>
+                <button class="button button-favourites">В избранное</button>
                 <p class="star star-four">
                     <span class="visually-hidden">4 звезды</span>
                 </p>
@@ -169,8 +169,8 @@
                 </a>
                 <p class="hotel-card-text">Гостиница</p>
                 <p class="hotel-card-text">От 3000 ₽</p>
-                <a href="" class="button-detailed">Подробнее</a>
-                <button class="button-favourites">В избранное</button>
+                <a href="" class="button button-detailed">Подробнее</a>
+                <button class="button button-favourites">В избранное</button>
                 <p class="star star-three">
                     <span class="visually-hidden">3 звезды</span>
                 </p>
@@ -183,8 +183,8 @@
                 </a>
                 <p class="hotel-card-text">Гостиница</p>
                 <p class="hotel-card-text">От 2000 ₽</p>
-                <a href="" class="button-detailed">Подробнее</a>
-                <button class="button-favourites-active">В избранное</button>
+                <a href="" class="button button-detailed">Подробнее</a>
+                <button class="button button-favourites-active">В избранном</button>
                 <p class="star star-two">
                     <span class="visually-hidden">2 звезды</span>
                 </p>
@@ -197,15 +197,15 @@
                 </a>
                 <p class="hotel-card-text">Гостиница</p>
                 <p class="hotel-card-text">От 3000 ₽</p>
-                <a href="" class="button-detailed">Подробнее</a>
-                <button class="button-favourites">В избранное</button>
+                <a href="" class="button button-detailed">Подробнее</a>
+                <button class="button button-favourites">В избранное</button>
                 <p class="star star-two">
                     <span class="visually-hidden">2 звезды</span>
                 </p>
                 <p class="card-rating">рейтинг 9,2</p>
             </article>
 
-            <button type="button" class="button-pangination-more">Загрузить ещё</button>
+            <button type="button" class=" button button-pangination-more">Загрузить ещё</button>
             <ul class="pangination-list">
                 <li class="pangination-item pangination-current">
                     <a class="pangination-link  ">1</a>
@@ -229,12 +229,11 @@
         </section>
         <form class="catalog-sorting">
             <label>Гостиниц на странице
-                <select name="quantity-hotels">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
+                <select name="quantity-hotels" class="select-sorting">
                     <option value="4" selected>4</option>
-                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="9">9</option>
+                    <option value="12">12</option>
                 </select>
             </label>
         </form>
