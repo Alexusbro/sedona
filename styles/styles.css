@@ -127,7 +127,7 @@ body {
 .button-detailed {
     font-size: 16px;
     line-height: 21px;
-
+grid-column: 1/2;
 }
 
 /*pages*/
@@ -457,12 +457,18 @@ body {
 .hotel-card-text {
     font-size: 18px;
     line-height: 23px;
+    margin: 0;
 }
 
 .hotel-card-price {
     font-size: 18px;
     line-height: 23px;
     grid-column: 3;
+    margin:0;
+}
+
+.card-rating {
+margin:0;
 }
 
 .pagination-nav {
@@ -548,6 +554,7 @@ body {
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr 26px 1fr;
+    row-gap: 16px;
 }
 
 .hotel-card-link {
@@ -556,6 +563,7 @@ body {
 }
 
 .hotel-card-image {
-    object-fit: cover;
-
+    object-fit: contain;
+width: 100%;
+display: block
 }
