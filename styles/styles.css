@@ -30,11 +30,14 @@ body {
     min-height: 100%;
 }
 
+
 .main-container {
     flex-grow: 1;
 }
 
-
+.navigation img {
+    display: block;
+}
 
 /*button*/
 
@@ -42,36 +45,49 @@ body {
     font-family: inherit;
     background-color: #756257;
     color: #fff;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20px;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 9px 15px;
-    width: 130px;
+    
+}
 
-
+.button-header {
+    display: block;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+width: 160px;
+border-radius: 5px;
+padding-top: 9px;
+padding-bottom: 8px;
 }
 
 .search-button {
+    font-weight: 700;
     font-size: 20px;
     line-height: 36px;
-    display: block;
-    margin: 0 auto;
-    width: 575px;
-    height: 60px;
+    display: inline-block;
+        min-width: 575px;
     margin-bottom: 93px;
     border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 9px;
 }
 
 .subscribe-button {
+    font-weight: 700;
+font-size: 20px;
+line-height: 26px;
+    font-family: inherit;
+    color: #fff;
+    text-transform: uppercase;
     font-size: 20px;
     line-height: 26px;
     background-color: #83B3D3;
     width: 200px;
     height: 61px;
     border-radius: 0 10px 10px 0;
+    border: none;
 }
 
 .pangination-container {
@@ -83,30 +99,47 @@ body {
 }
 
 .button-pangination-more {
+    font-family: inherit;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
     font-size: 20px;
     line-height: 26px;
     background-color: #83B3D3;
-    width: 620px;
-    height: 60px;
+    min-width: 620px;
     border-radius: 4px;
+    border: none;
+    padding: 17px;
 }
 
 .filter-button {
-    font-size: 16px;
-    line-height: 21px;
+    font-family: inherit;
+    font-weight: 700;
+font-size: 16px;
+line-height: 21px;
     background: #83B3D3;
-    width: 160px;
+    min-width: 160px;
     height: 48px;
     border-radius: 4px;
     margin-bottom: 20px;
-
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .button-favourites {
-    font-size: 16px;
-    line-height: 21px;
+    font-family: inherit;
+    font-weight: 700;
+font-size: 16px;
+line-height: 21px;
     background: #83B3D3;
     width: 140px;
+grid-column: 2/3;
+padding-top: 7px;
+padding-bottom: 10px;
+border-radius: 4px;
+border: none;
 }
 
 .filter-button-reset {
@@ -118,16 +151,30 @@ body {
 }
 
 .button-favourites-active {
-    font-size: 16px;
-    line-height: 21px;
+    font-family: inherit;
+    font-weight: 700;
+font-size: 16px;
+line-height: 21px;
     background: #7DB54F;
     width: 140px;
+    grid-column: 2/3;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    border: none;
 }
 
 .button-detailed {
-    font-size: 16px;
-    line-height: 21px;
+    font-family: inherit;
+    font-weight: 700;
+font-size: 16px;
+line-height: 21px;
 grid-column: 1/2;
+width: 133px;
+display: block;
+padding-top: 9px;
+padding-bottom: 10px;
+border-radius: 4px;
 }
 
 /*pages*/
@@ -225,6 +272,10 @@ grid-column: 1/2;
     font-weight: 700;
     line-height: 28px;
     text-transform: uppercase;
+}
+
+.interest {
+    text-align: center;
 }
 
 .advantage .section-title {
@@ -450,25 +501,28 @@ grid-column: 1/2;
     font-size: 24px;
     line-height: 31px;
     color: #000;
-    grid-row: 2;
+    grid-row: 2/3;
     grid-column: 1/-1;
+    margin: 0;
 }
 
 .hotel-card-text {
     font-size: 18px;
     line-height: 23px;
     margin: 0;
+    grid-column: 1/2
 }
 
 .hotel-card-price {
     font-size: 18px;
     line-height: 23px;
-    grid-column: 3;
+    grid-column: 2/3;
     margin:0;
 }
 
 .card-rating {
 margin:0;
+grid-column: 2;
 }
 
 .pagination-nav {
@@ -553,8 +607,10 @@ margin:0;
 .hotel-card {
     padding: 20px;
     display: grid;
-    grid-template-columns: 1fr 26px 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 26px;
     row-gap: 16px;
+    
 }
 
 .hotel-card-link {
@@ -563,7 +619,7 @@ margin:0;
 }
 
 .hotel-card-image {
-    object-fit: contain;
+    object-fit: cover;
 width: 100%;
 display: block
 }
