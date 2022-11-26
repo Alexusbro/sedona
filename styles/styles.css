@@ -133,10 +133,10 @@ body {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 21px;
+ 
     background: #83B3D3;
     width: 140px;
-    grid-column: 2/3;
+    grid-column: 3/4;
     padding-top: 7px;
     padding-bottom: 10px;
     border-radius: 4px;
@@ -174,7 +174,7 @@ body {
     width: 133px;
     display: block;
     padding-top: 9px;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     border-radius: 4px;
 }
 
@@ -631,6 +631,7 @@ font-style: normal;
     color: #000000;
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .hotel-card-title {
@@ -653,13 +654,13 @@ font-style: normal;
 .hotel-card-price {
     font-size: 18px;
     line-height: 23px;
-    grid-column: 2/3;
+    grid-column: 3/4;
     margin: 0;
 }
 
 .card-rating {
     margin: 0;
-    grid-column: 2;
+    grid-column: 2/4;
     background: #F2F2F2;
     border-radius: 4px;
     font-family: 'PT Sans';
@@ -670,6 +671,7 @@ font-style: normal;
     padding-bottom: 10px;
     text-align: center;
     text-transform: uppercase;
+    
 
 }
 
@@ -757,9 +759,8 @@ border-radius: 4px;
 .hotel-card {
     padding: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 26px;
-    row-gap: 16px;
+    grid-template-columns: 1fr 26px 1fr;
+       row-gap: 16px;
 }
 
 .hotel-card-link {
@@ -772,4 +773,5 @@ border-radius: 4px;
     width: 100%;
     display: block;
    order: -1;
+   margin-bottom: 16px;
 }
