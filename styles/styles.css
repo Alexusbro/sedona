@@ -318,12 +318,14 @@ body {
     text-align: center;
     color: #000;
     margin: 0;
+    margin-bottom: 46px;
 }
 
 .section-description {
     font-size: 22px;
-    line-height: 36px;
+    line-height: 26px;
     text-align: center;
+    margin-bottom: 46px;
 }
 
 .interest-description {
@@ -511,6 +513,9 @@ li.advantage-item:nth-child(4) {
     border-radius: 10px 0px 0px 10px;
     padding: 0 22px;
     box-sizing: border-box;
+    background: #F2F2F2;
+    border: none;
+   
 }
 
 .catalog-filter {
@@ -619,11 +624,25 @@ font-weight: 400;
 .select-sorting {
     font-size: 18px;
     line-height: 23px;
-    width: 287px;
+    min-width: 287px;
     height: 48px;
     padding-left: 13px;
+    
     font-family: 'PT Sans';
 font-style: normal;
+}
+
+.quantity-sorting{
+    font-size: 18px;
+    line-height: 23px;
+    min-width: 160px;
+    height: 48px;
+    padding-left: 13px;
+    border: 2px solid #E6E6E6;
+border-radius: 4px;
+    font-family: 'PT Sans';
+font-style: normal;
+margin-left:50px;
 }
 
 .hotel-card-link {
@@ -668,7 +687,7 @@ font-style: normal;
     font-weight: 400;
     font-size: 16px;
     padding-top: 9px;
-    padding-bottom: 10px;
+    
     text-align: center;
     text-transform: uppercase;
     
