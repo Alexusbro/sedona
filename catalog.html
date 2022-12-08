@@ -165,18 +165,26 @@
                     </select>
                     <button class="visually-hidden" type="submit">Отсортировать продукты</button>
                 </form>
-                <a href="#" class="sorting-button-active">
-                    <span class="visually-hidden">сетка</span>
-                </a>
-                <a href="#" class="sorting-button">
-                    <span class="visually-hidden">список</span>
-                </a>
-                <a href="#" class="sorting-button">
-                    <span class="visually-hidden">подробное описание</span>
-                </a>
+                <ul class="view-list">
+                    <li class="">
+                        <a href="#" class="view-item view-item-active view-item-cards">
+                            <span class="visually-hidden">карточки</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#" class="view-item view-item-slides">
+                            <span class="visually-hidden">плитки</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#" class="view-item view-item-list">
+                            <span class="visually-hidden">список</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="catalog-list">
-               
+
                 <article class="hotel-card">
                     <a href="hotel.html" class="hotel-card-link">
                         <h3 class="hotel-card-title">Amara Resort & Spa</h3>
@@ -187,10 +195,10 @@
                     <p class="hotel-card-price">От 4000 ₽</p>
                     <a href="" class="button button-detailed">Подробнее</a>
                     <button class="button button-favourites">В избранное</button>
-                    <p class="star star-two">
+                    <p class="star star-four">
                         <span class="visually-hidden">4 звезды</span>
                     </p>
-                    <p class    "card-rating">рейтинг 8,5</p>
+                    <p class="card-rating">рейтинг 8,5</p>
                 </article>
                 <article class="hotel-card">
                     <a href="hotel.html" class="hotel-card-link">
@@ -216,14 +224,14 @@
                     <p class="hotel-card-text">Гостиница</p>
                     <p class="hotel-card-price">От 2000 ₽</p>
                     <a href="" class="button button-detailed">Подробнее</a>
-                    <button class="button button-favourites">В избранное</button>
+                    <button class="button button-favourites-active">В избранном</button>
                     <p class="star star-two">
                         <span class="visually-hidden">2 звезды</span>
                     </p>
                     <p class="card-rating">рейтинг 9,2</p>
                 </article>
-               
-                
+
+
                 <article class="hotel-card">
                     <a href="hotel.html" class="hotel-card-link">
                         <h3 class="hotel-card-title">GreenTree Inn</h3>
@@ -245,7 +253,7 @@
             </div>
             <div class="pagination-nav">
                 <ul class="pangination-list">
-                                        <li class="pangination-item ">
+                    <li class="pangination-item ">
                         <a class="pangination-link pangination-current ">1</a>
                     </li>
                     <li class="pangination-item">
@@ -263,7 +271,6 @@
                     <li class="pangination-item">
                         <a href="#" class="pangination-link">10</a>
                     </li>
-                 
                 </ul>
                 <form class="catalog-sorting">
                     <label>Гостиниц на странице
