@@ -98,6 +98,20 @@ body {
     padding-bottom: 9px;
 }
 
+.search-button:hover {
+    background-color: #615048;
+}
+
+.search-button:active {
+    background: #615048;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.search-button:focus:not(:active) {
+    background-color: #615048;
+    outline: 3px solid #83B3D3;
+    outline-offset: 0;}
+
 .subscribe-button {
     font-weight: 700;
     font-size: 20px;
@@ -417,6 +431,13 @@ body {
     margin-bottom: 46px;
 }
 
+.section-description-advantage {
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 46px;
+}
+
 .interest-description {
     font-size: 22px;
     line-height: 26px;
@@ -469,7 +490,7 @@ h3.white-text {
     margin: 63px 240px 31px 240px;
 }
 
-.advantage .section-description {
+.advantage .section-description-advantage {
     width: 720px;
     margin: 0 240px 80px;
 }
