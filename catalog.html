@@ -126,11 +126,13 @@
                     <fieldset class="catalog-filter-group filter-price">
                         <legend class="filter-legend">Стоимость, Р:</legend>
                         <div class="range-fields">
-                            <label class="catalog-filter-input">
-                                <input type="number" name="min-price" value="0" min="0" max="10000" step="100">от
+                            <label class="catalog-filter-input min">
+                                <input type="number" name="min-price" value="0" min="0" max="10000" step="100">
+                                <span class="range-title">от</span>
                             </label>
-                            <label class="catalog-filter-input">
-                                <input type="number" name="max-price" value="9000" min="0" max="10000" step="100">до
+                            <label class="catalog-filter-input max">
+                                <input type="number" name="max-price" value="9000" min="0" max="10000" step="100">
+                                <span class="range-title">до</span>
                             </label>
                         </div>
 
