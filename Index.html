@@ -216,18 +216,28 @@
     <div class="modal">
       <h2 class="modal-header">поиск гостиницы в седоне</h2>
       <button class="modal-close" type="button">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_18711_342)">
+          <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z" fill="black"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_18711_342">
+          <rect width="13" height="13" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>    
         <span class="visually-hidden">закрыть модальное окно</span>
       </button>
       <form action="https://echo.htmlacademy.ru" method="post">
         <div class="modal-content">
           <div class="modal-date">
             <label class="modal-label" for="date-in"> Дата заезда: </label>
-            <input class="modal-field" name="date-in" type="text" value="27 апреля 2020" placeholder="укажите дату">
+            <input class="modal-field" id="date-in" name="date-in" type="text" value="27 апреля 2020" placeholder="Укажите дату">
             <span class="modal-field-attantion date-error">Мы не можем отправить вас в прошлое.</span>
           </div>
-          <div class="modal-date"><label class="modal-label for=" date-out">
-              Дата выезда: </label>
-            <input class="modal-field" name="date-out" type="text" value="1 сентября 2021" placeholder="укажите дату">
+          <div class="modal-date">
+            <label class="modal-label" for="date-out">Дата выезда: </label>
+            <input class="modal-field" id="date-out" name="date-out" type="text" value="1 сентября 2021" placeholder="Укажите дату">
             <span class="modal-field-attantion">На эти даты есть свободные номера. Пока есть.</span>
           </div>
           <div class="modal-person">
@@ -235,7 +245,7 @@
               <label for="adult-person" class="modal-label">Взрослые:</label>
               <div class="adult-number">
                 <button type="button" class="number-button button-minus"></button>
-                <input type="number" id="adult-person" class="input-modal" min="1" step="1" value="2" placeholder="0">
+                <input type="number" id="adult-person" name="adult-person" class="input-modal" min="1" step="1" value="2" placeholder="0">
                 <button type="button" class="number-button button-plus"></button>
               </div>
             </div>
@@ -243,18 +253,18 @@
               <label for="child-person" class="modal-label">Дети:
                 <span class="modal-info">
                   <span class="modal-info-text">
-                    
+                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                   </span>
                 </span>
               </label>
               <div class="child-number">
                 <button type="button" class="number-button button-minus"></button>
-                <input type="number" id="child-person" class="input-modal" min="1" step="1" value="1" placeholder="0">
+                <input type="number" id="child-person" name="child-person" class="input-modal" min="1" step="1" value="1" placeholder="0">
                 <button type="button" class="number-button button-plus"></button>
               </div>
             </div>
           </div>
-          <button type="button" class="button-modal">найти</button>
+          <button type="submit" class="button-modal">найти</button>
 
         </div>
       </form>
